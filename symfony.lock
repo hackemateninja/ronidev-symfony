@@ -50,6 +50,9 @@
             "bin/phpunit"
         ]
     },
+    "stenope/stenope": {
+        "version": "v0.9.0"
+    },
     "symfony/asset-mapper": {
         "version": "7.3",
         "recipe": {
