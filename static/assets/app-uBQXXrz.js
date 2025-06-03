@@ -5,7 +5,7 @@
  * This file will be included onto the page via the importmap() Twig function,
  * which should already be in your base.html.twig.
  */
-import Alpine from 'alpinejs'
+import Alpine from './vendor/alpinejs/alpinejs.index.js'
 
 window.Alpine = Alpine
 
