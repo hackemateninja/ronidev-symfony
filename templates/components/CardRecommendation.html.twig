@@ -1,3 +1,12 @@
-<div{{ attributes }}>
-    <!-- component HTML -->
-</div>
+<article {{ attributes}} class="shrink-0 w-[66.6667%] p-5 rounded-xl relative before:absolute before:inset-0 before:rounded-[inherit] before:-z-10 before:transition before:duration-300 data-[state=active]:before:bg-gradient-to-tr data-[state=active]:before:from-gray-100 data-[state=active]:before:to-gray-50 dark:data-[state=active]:before:bg-gradient-to-tr dark:data-[state=active]:before:from-gray-800 dark:data-[state=active]:before:to-gray-800/[0.65] before:opacity-0 data-[state=active]:before:opacity-100">
+	<div class="flex items-center space-x-3 mb-4">
+		<img class="shrink-0 w-11 h-11 rounded-full shadow-lg" src="{{ asset('/images/testimonial-01.jpg') }}" width="44" height="44" alt="Testimonial 01" />
+		<div>
+			<h3 class="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-0.5">
+				<a class="hover:underline decoration-2 decoration-gray-300 dark:decoration-gray-600 underline-offset-2" href="#0">Enrico Perry</a>
+			</h3>
+			<p class="text-[13px] font-medium text-gray-500/70">CTO, medium.com</p>
+		</div>
+	</div>
+	<p class="font-inter-tight font-semibold text-gray-800 dark:text-gray-100 before:content-['\201C'] after:content-['\201D']">If there's one investment that's really paid off, it's hiring a professional developer. I love the results I get every day.</p>
+</article>
