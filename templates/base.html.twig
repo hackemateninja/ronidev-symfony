@@ -2,9 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ronin dev the prodigal son of PHP{% endblock %}</title>
+	  <meta name="description" content="Descripción clara de tu página (máx. 160 caracteres)">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+
+	  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+	  <meta name="robots" content="index, follow">
+	  <link rel="canonical" href="https://www.tudominio.com/url-canonica">
+	  <meta name="author" content="Tu nombre o empresa">
+
+	  <meta property="og:title" content="Título optimizado para redes">
+	  <meta property="og:description" content="Descripción para compartir en redes">
+	  <meta property="og:url" content="https://www.tudominio.com">
+	  <meta property="og:type" content="website">
+	  <meta property="og:image" content="https://www.tudominio.com/imagen-compartir.jpg">
+	  <meta property="og:site_name" content="Nombre de tu sitio">
+	  <meta property="og:locale" content="es_ES">
+
+	  <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:site" content="@tucuenta">
+	  <meta name="twitter:creator" content="@tucreador">
+	  <meta name="twitter:title" content="Título para Twitter">
+	  <meta name="twitter:description" content="Descripción para Twitter">
+	  <meta name="twitter:image" content="https://www.tudominio.com/imagen-twitter.jpg">
+	  <meta name="twitter:url" content="https://www.tudominio.com">
+
+	  <!-- Para Apple -->
+	  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	  <meta name="apple-mobile-web-app-title" content="Nombre corto">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <!-- Para Microsoft -->
+	  <meta name="msapplication-TileColor" content="#ffffff">
+	  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	  <meta name="theme-color" content="#ffffff">
+
     {% block stylesheets %}
+	    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
     {% endblock %}
 
   </head>
@@ -16,7 +51,6 @@
 					  <div class="flex flex-col min-h-screen">
 					    <twig:Header />
 					    {% block body %}{% endblock %}
-
 					    <twig:Footer />
 					  </div>
 				  </div>
