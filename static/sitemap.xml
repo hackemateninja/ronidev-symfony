@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>http://localhost/</loc>
-		<lastmod>2025-06-03T09:23:58+00:00</lastmod>
-		<priority>0</priority>
-		<changefreq>monthly</changefreq>
-	</url>
-</urlset>
+            <url>
+            <loc>http://localhost/</loc>
+            <lastmod>2025-06-04T11:31:09+00:00</lastmod>            <priority>0</priority>            <changefreq>monthly</changefreq>
+        </url>
+    </urlset>
