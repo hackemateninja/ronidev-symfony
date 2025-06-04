@@ -4,6 +4,6 @@ keywords: "symfony, developer, senior, guatemala, prodigal, son, sulu, sylius, c
 websiteURL: "https://www.ronindev.ninja"
 author: "Ronindev"
 xHandle: "@Hackemateninja"
-xImage: "./images/x.jpg"
-metaImage: "./images/meta.jpg"
+xImage: "https://www.ronindev.ninja/images/x.jpg"
+metaImage: "https://www.ronindev.ninja/images/meta.jpg"
 favicon: "./images/favicon.png"
