@@ -15,5 +15,7 @@ final class Header
 
 	public string $buttonURL = "";
 
+	public string $buttonText = "";
+
 	public array $featuredImages = [];
 }

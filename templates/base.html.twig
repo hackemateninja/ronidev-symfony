@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Ronin dev the prodigal son of PHP{% endblock %}</title>
-	  <twig:SEO />
+	  {% block seo %}
+	  {% endblock %}
     {% block stylesheets %}
 	    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
     {% endblock %}
@@ -16,25 +16,7 @@
 			  <div class="w-full bg-white dark:bg-gray-900 border-x border-gray-100 dark:border-gray-800 box-content">
 				  <div class="px-3 md:px-16">
 					  <div class="flex flex-col min-h-screen">
-					    <twig:Header
-					      title="Herman Orlando Morales López | Ronin Dev"
-					      description="Senior Full Stack developer, UX-UI and Symfony PHP specialist <br/> from GT 🇬🇹. Martial arts lover 🥋🥊"
-					      buttonURL="https://www.linkedin.com/in/hackemate/"
-					      image="{{ asset('./images/me.png') }}"
-					      featuredImages="{{ [
-						      asset('./images/header-image-01.jpg'),
-						      asset('./images/header-image-02.jpg'),
-						      asset('./images/header-image-03.jpg')
-					      ] }}"
-					    />
 					    {% block body %}{% endblock %}
-					    <twig:Footer
-					      logoURL="{{ asset('./images/imagologo.png') }}"
-					      xURL="https://x.com/hackemateninja"
-					      gitHubURL="https://github.com/hackemateninja"
-					      facebookURL="https://www.facebook.com/ronindevninja"
-					      copyright="Herman Morales. All rights reserved"
-					    />
 					  </div>
 				  </div>
 			  </div>

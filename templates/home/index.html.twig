@@ -1,19 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block seo %}
+	<twig:SEO
+		title="{{ seoConfig.title }}"
+		description="{{ seoConfig.description }}"
+		keywords="{{ seoConfig.keywords }}"
+		websiteURL="{{ seoConfig.websiteURL }}"
+		author="{{ seoConfig.author }}"
+		xHandle="{{seoConfig.xHandle}}"
+		xImage="{{ seoConfig.xImage }}"
+		metaImage="{{ seoConfig.metaImage }}"
+		favicon="{{ seoConfig.favicon }}"
+	/>
+{% endblock %}
+
 
 {% block body %}
+	<twig:Header
+		title="{{siteConfig.title}}"
+		description="{{ siteConfig.description }}"
+		buttonURL="{{ siteConfig.buttonURL }}"
+		buttonText="{{ siteConfig.buttonText }}"
+		image="{{ siteConfig.image }}"
+		featuredImages="{{ siteConfig.featuredImages }}"
+	/>
 	<main class="grow py-12 space-y-12">
-
 		<!-- Experience -->
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Experience</h2>
 			<div class="space-y-1">
-				<!-- Post #1 -->
-				<twig:CardExperience />
-				<!-- Post #2 -->
-				<twig:CardExperience />
-				<!-- Post #3 -->
 				<twig:CardExperience />
 			</div>
 		</section>
@@ -22,11 +37,6 @@
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Certifications</h2>
 			<div class="space-y-1">
-				<!-- Post #1 -->
-				<twig:CardCertification />
-				<!-- Post #2 -->
-				<twig:CardCertification />
-				<!-- Post #3 -->
 				<twig:CardCertification />
 			</div>
 		</section>
@@ -35,13 +45,17 @@
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Side Hustles</h2>
 			<div class="grid min-[580px]:grid-cols-2 gap-4">
-				<!-- Post #1 -->
-				<twig:CardProject />
-				<!-- Post #2 -->
 				<twig:CardProject />
 			</div>
 		</section>
-
-
 	</main>
+
+	<twig:Footer
+		logoURL="{{ siteConfig.logoURL }}"
+		xURL="{{ siteConfig.xURL }}"
+		gitHubURL="{{ siteConfig.gitHubURL }}"
+		facebookURL="{{ siteConfig.facebookURL }}"
+		copyright="{{ siteConfig.copyright }}"
+	/>
 {% endblock %}
+

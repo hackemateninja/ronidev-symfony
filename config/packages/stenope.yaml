@@ -1,2 +1,5 @@
 stenope:
-    build_dir: '%kernel.project_dir%/build'
+  build_dir: '%kernel.project_dir%/static'
+  providers:
+    App\Model\SiteConfig: '%kernel.project_dir%/content'
+    App\Model\Seo: '%kernel.project_dir%/content'
