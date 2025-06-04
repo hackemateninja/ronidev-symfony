@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Model\Certification;
 use App\Model\Experience;
 use App\Model\Seo;
 use App\Model\SideProject;
@@ -23,6 +24,7 @@ final class HomeController extends AbstractController
 					'seoConfig' => $contentManager->getContent(Seo::class, 'seo'),
 	        'sideProject' => $contentManager->getContent(SideProject::class, 'side'),
 	        'experience' => $contentManager->getContent(Experience::class, 'experience'),
+	        'certification' => $contentManager->getContent(Certification::class, 'certification'),
         ]);
     }
 }

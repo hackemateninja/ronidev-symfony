@@ -43,7 +43,14 @@
 
 		<!-- Certifications -->
 		<twig:SectionVertical sectionTitle="Certifications">
-			<twig:CardCertification />
+			{% for cert in certification.certifications %}
+				<twig:CardCertification
+					title="{{ cert.title }}"
+					description="{{ cert.description }}"
+					url="{{ cert.url }}"
+					certificationPlace="{{ cert.certificationPlace }}"
+				/>
+			{% endfor %}
 		</twig:SectionVertical>
 
 

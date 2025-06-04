@@ -1,2 +1,55 @@
 certifications:
+  - title: "Go Pro with Doctrine Queries"
+    description: "Advanced Doctrine query techniques certification"
+    url: "https://symfonycasts.com/certificates/18313F03C151"
+    certificationPlace: "SymfonyCasts"
 
+  - title: "Cosmic coding with Symfony 7"
+    description: "Modern Symfony 7 development practices"
+    url: "https://symfonycasts.com/certificates/1E8FF59BC155s"
+    certificationPlace: "SymfonyCasts"
+
+  - title: "Dependency Injection Attributes"
+    description: "Mastery of dependency injection using attributes"
+    url: "https://symfonycasts.com/certificates/DF57E727C160"
+    certificationPlace: "SymfonyCasts"
+
+  - title: "Doctrine, Symfony 7 & the Database"
+    description: "Database integration with Symfony 7 and Doctrine"
+    url: "https://symfonycasts.com/certificates/2AC5E6BDC161"
+    certificationPlace: "SymfonyCasts"
+
+  - title: "Symfony 7 Fundamentals: Services, Config & Environments"
+    description: "Core Symfony 7 service container and configuration"
+    url: "https://symfonycasts.com/certificates/D0549320C158"
+    certificationPlace: "SymfonyCasts"
+
+  - title: "Upgrading & What's in Symfony 7"
+    description: "Symfony version upgrades and new features"
+    url: "https://symfonycasts.com/certificates/DD3B612AC156"
+    certificationPlace: "SymfonyCasts"
+
+  - title: "Data Modeling Course Completion Certificate"
+    description: "ScyllaDB data modeling and application development"
+    url: "https://university.scylladb.com/your-certificate/1276F56DD-1276F2EA3-127403159/"
+    certificationPlace: "ScyllaDB"
+
+  - title: "ScyllaDB Essentials Course Completion Certificate"
+    description: "Fundamentals of ScyllaDB NoSQL database"
+    url: "https://university.scylladb.com/your-certificate/1276F573D-12740579C-127403159/"
+    certificationPlace: "ScyllaDB"
+
+  - title: "Frontend Developer (React) Certificate"
+    description: "React.js development skills certification"
+    url: "https://www.hackerrank.com/certificates/78263bbc4475"
+    certificationPlace: "HackerRank"
+
+  - title: "Software Engineer Certificate"
+    description: "General software engineering skills assessment"
+    url: "https://www.hackerrank.com/certificates/9e08f9500bd3"
+    certificationPlace: "HackerRank"
+
+  - title: "Learn SQL Course"
+    description: "Fundamental SQL database skills"
+    url: "https://www.codecademy.com/profiles/hackemateninja/certificates/042a4e5884e3eb6ea1f2a12be6abb851"
+    certificationPlace: "Codecademy"
