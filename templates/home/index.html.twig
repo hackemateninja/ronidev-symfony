@@ -25,26 +25,21 @@
 		featuredImages="{{ siteConfig.featuredImages }}"
 	/>
 	<main class="grow py-12 space-y-12">
+
 		<!-- Experience -->
-		<section>
-			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Experience</h2>
-			<div class="space-y-1">
-				<twig:CardExperience />
-			</div>
-		</section>
+		<twig:SectionVertical sectionTitle="Experience">
+			<twig:CardExperience />
+		</twig:SectionVertical>
 
 		<!-- Certifications -->
-		<section>
-			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Certifications</h2>
-			<div class="space-y-1">
-				<twig:CardCertification />
-			</div>
-		</section>
+		<twig:SectionVertical sectionTitle="Certifications">
+			<twig:CardCertification />
+		</twig:SectionVertical>
 
 		<!-- Side Hustles -->
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Side Hustles</h2>
-			<div class="grid min-[580px]:grid-cols-2 gap-4">
+			<div class="grid min-[580px]:grid-cols-2 gap-4 group">
 				<twig:CardProject />
 			</div>
 		</section>
