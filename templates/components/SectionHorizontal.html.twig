@@ -1,0 +1,6 @@
+<section {{ attributes }}>
+	<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">{{ sectionTitle }}</h2>
+	<div class="grid min-[580px]:grid-cols-2 gap-4 {{ isGroup ? 'group' : '' }}">
+		{% block content %}{% endblock %}
+	</div>
+</section>
