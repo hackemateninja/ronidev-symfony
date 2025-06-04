@@ -1,19 +1,17 @@
 <article {{ attributes}} class="p-5 rounded-xl odd:bg-gradient-to-tr odd:from-gray-100 odd:to-gray-50 dark:odd:bg-gradient-to-tr dark:odd:from-gray-800 dark:odd:to-gray-800/[0.65]">
 	<div class="sm:flex gap-5">
 		<div class="shrink-0 w-10 h-10 rounded-full flex items-center justify-center bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600/[0.65] shadow-sm max-sm:mb-3 sm:mt-5">
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-				<path fill="#9C76EC" d="M7.567 7.6c-1.814-.137-3.56-.885-4.874-2.204A7.662 7.662 0 0 1 .5.5c1.868.136 3.56.884 4.874 2.203A7.662 7.662 0 0 1 7.567 7.6Zm.865 0c1.814-.137 3.56-.885 4.873-2.204C14.62 4.076 15.364 2.322 15.5.5c-1.869.136-3.629.884-4.874 2.203A7.662 7.662 0 0 0 8.432 7.6Zm4.873 3.005c-1.313-1.32-3.06-2.068-4.873-2.204a7.662 7.662 0 0 0 2.193 4.896c1.313 1.32 3.06 2.067 4.874 2.204-.136-1.877-.88-3.645-2.194-4.896ZM7.636 8.4c-1.882.136-3.629.884-4.942 2.204C1.38 11.854.622 13.623.5 15.5c1.868-.123 3.56-.884 4.942-2.204a7.662 7.662 0 0 0 2.193-4.896Z" />
-			</svg>
+			<img src="{{ imageURL }}" alt="{{ title }}">
 		</div>
 		<div>
 			<div class="space-y-1.5 mb-3">
-				<div class="text-[13px] italic text-gray-500/70">2021 - Today</div>
+				<div class="text-[13px] italic text-gray-500/70">{{ startDate }} - {{ endDate }}</div>
 				<h3 class="font-semibold text-gray-800 dark:text-gray-100">
-					<a class="hover:underline decoration-2 decoration-gray-300 dark:decoration-gray-600 underline-offset-2" href="#0">Senior Developer and VP of Product at Qonto</a>
+					<a class="hover:underline decoration-2 decoration-gray-300 dark:decoration-gray-600 underline-offset-2" href="{{ url }}" target="_blank">{{ title }}</a>
 				</h3>
-				<div class="text-[13px] font-medium text-gray-600dark:text-gray-400">London, UK</div>
+				<div class="text-[13px] font-medium text-gray-600dark:text-gray-400">{{ place }}</div>
 			</div>
-			<p class="text-sm text-gray-600 dark:text-gray-400">Setting vision, leadership, processes while directly participating in communications with clients such as eBay, Amazon, X, Twitch, Instagram, and many others.</p>
+			<p class="text-sm text-gray-600 dark:text-gray-400">{{ description|raw }}</p>
 		</div>
 	</div>
 </article>
