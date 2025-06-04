@@ -18,17 +18,6 @@
 			</div>
 		</section>
 
-		<!-- Tutorials -->
-		<section>
-			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Tutorials</h2>
-			<div class="grid min-[580px]:grid-cols-2 gap-4 group">
-				<!-- Video #1 -->
-				<twig:CardTutorial />
-				<!-- Video #2 -->
-				<twig:CardTutorial />
-			</div>
-		</section>
-
 		<!-- Certifications -->
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Articles</h2>
@@ -53,89 +42,6 @@
 			</div>
 		</section>
 
-		<!-- Recommendations -->
-		<section>
-			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Recommendations</h2>
-			<div class="[mask-image:_linear-gradient(to_right,black_50%,transparent_90%)] md:[mask-image:_linear-gradient(to_right,transparent_48px,black_64px,black_50%,transparent_90%)] -mx-3 md:-mx-16">
-				<div
-					class="flex gap-4 px-3 md:px-16 transition-transform duration-500 ease-in-out"
-					x-data="testimonialCarousel"
-					@resize.window.debounce="handleResize"
-					@transitionend="handleTransitionEnd($event)"
-					@mouseover="pauseCarousel()"
-					@mouseout="playCarousel()"
-					@focusin="$event.currentTarget.contains($event.relatedTarget) || pauseCarousel()"
-					@focusout="$event.currentTarget.contains($event.relatedTarget) || playCarousel()"
-				>
-					<!-- Post #1 -->
-					<twig:CardRecommendation />
-					<!-- Post #2 -->
-					<twig:CardRecommendation />
-					<!-- Post #3 -->
-					<twig:CardRecommendation />
-					<!-- Post #4 -->
-					<twig:CardRecommendation />
-				</div>
-				<!-- Carousel functionality: https://github.com/alpinejs/alpine -->
-				<script>
-					document.addEventListener('alpine:init', () => {
-						Alpine.data('testimonialCarousel', () => ({
-							duration: 3000,
-							intervalId: null,
-							articleWidth: 0,
-							gap: 0,
-							init() {
-								this.handleResize();
-								this.prependLastChild();
-								this.removeTransitionTemporarily();
-								this.translateContainer(-this.articleWidth - this.gap);
-								this.playCarousel();
-								this.setActiveState();
-							},
-							handleResize() {
-								this.articleWidth = this.$el.children[0].offsetWidth;
-								this.gap = parseFloat(getComputedStyle(this.$el).getPropertyValue('gap'));
-							},
-							prependLastChild() {
-								this.$el.prepend(this.$el.lastElementChild);
-							},
-							translateContainer(value) {
-								this.$el.style.transform = `translateX(${value}px)`;
-							},
-							removeTransitionTemporarily() {
-								this.$el.style.transition = 'none';
-								setTimeout(() => {
-									this.$el.style.transition = '';
-								}, 0);
-							},
-							startCarousel() {
-								return setInterval(() => {
-									this.translateContainer(-2 * (this.articleWidth + this.gap));
-								}, this.duration);
-							},
-							handleTransitionEnd(event) {
-								if (event.propertyName !== 'transform') return;
-								this.$el.appendChild(this.$el.firstElementChild);
-								this.removeTransitionTemporarily();
-								this.translateContainer(-this.articleWidth - this.gap);
-								this.setActiveState();
-							},
-							playCarousel() {
-								this.intervalId = this.startCarousel();
-							},
-							pauseCarousel() {
-								clearInterval(this.intervalId);
-							},
-							setActiveState() {
-								Array.from(this.$el.children).forEach((child, index) => {
-									child.setAttribute('data-state', index === 1 ? 'active' : 'inactive');
-								});
-							}
-						}))
-					})
-				</script>
-			</div>
-		</section>
 
 	</main>
 {% endblock %}
