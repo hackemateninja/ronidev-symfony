@@ -1,11 +1,11 @@
 <article {{ attributes }} class="relative aspect-video rounded-xl shadow-lg overflow-hidden min-[580px]:odd:-rotate-2 min-[580px]:even:rotate-2 group-hover:rotate-0 transition duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)]">
 	<figure
 		class="absolute inset-0 before:absolute before:inset-0 before:bg-gradient-to-t before:to-75% before:from-gray-950/50 before:to-transparent">
-		<img class="h-full w-full object-cover" src="{{ asset('/images/tutorial-01.jpg') }}" width="600" height="338" alt="Tutorial 01" />
+		<img class="h-full w-full object-cover" src="{{ imageURL }}" width="600" height="338" alt="{{ title }}" />
 	</figure>
 	<div class="relative flex flex-col justify-end h-full w-full px-6 py-5">
 		<h3 class="text-sm font-medium text-white">
-			<a class="before:absolute before:inset-0" href="#0">Learn Programming in 2024</a>
+			<a class="before:absolute before:inset-0" href="{{ url }}" target="_blank">{{ title }}</a>
 		</h3>
 	</div>
 </article>
