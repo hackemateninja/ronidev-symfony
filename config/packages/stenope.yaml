@@ -3,3 +3,6 @@ stenope:
   providers:
     App\Model\SiteConfig: '%kernel.project_dir%/content'
     App\Model\Seo: '%kernel.project_dir%/content'
+    App\Model\SideProject: '%kernel.project_dir%/content'
+    App\Model\Experience: '%kernel.project_dir%/content'
+    App\Model\Certification: '%kernel.project_dir%/content'

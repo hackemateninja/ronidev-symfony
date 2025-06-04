@@ -28,7 +28,17 @@
 
 		<!-- Experience -->
 		<twig:SectionVertical sectionTitle="Experience">
-			<twig:CardExperience />
+			{% for experience in experience.experiences %}
+				<twig:CardExperience
+					title="{{ experience.title }}"
+					description="{{ experience.description }}"
+					imageURL="{{ experience.imageURL }}"
+					startDate="{{ experience.startDate }}"
+					endDate="{{ experience.endDate }}"
+					url="{{ experience.url }}"
+					place="{{ experience.place }}"
+				/>
+			{% endfor %}
 		</twig:SectionVertical>
 
 		<!-- Certifications -->
@@ -36,11 +46,19 @@
 			<twig:CardCertification />
 		</twig:SectionVertical>
 
+
 		<!-- Side Hustles -->
 		<section>
 			<h2 class="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">Side Hustles</h2>
 			<div class="grid min-[580px]:grid-cols-2 gap-4 group">
-				<twig:CardProject />
+				{% for project in sideProject.projects %}
+					<twig:CardProject
+						name="{{ project.name }}"
+						description="{{ project.description }}"
+						imageUrl="{{ project.imageUrl }}"
+						url="{{ project.url }}"
+					/>
+				{% endfor %}
 			</div>
 		</section>
 	</main>

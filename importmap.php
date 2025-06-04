@@ -28,4 +28,7 @@ return [
     'alpinejs' => [
         'version' => '3.14.9',
     ],
+    'posthog-js' => [
+        'version' => '1.249.2',
+    ],
 ];

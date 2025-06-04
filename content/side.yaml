@@ -1,0 +1,10 @@
+projects:
+  - name: "bushidolabs"
+    description: "Software development company for wellness"
+    imageUrl: "./images/bushidolabs.jpg"
+    url: "https://bushidolabs.dev"
+
+  - name: "Papi shampu"
+    description: "Ecommerce for hair natural hair products"
+    imageUrl: "./images/papishampu.jpg"
+    url: "https://papishampu.shop"

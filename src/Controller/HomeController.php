@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Model\Experience;
 use App\Model\Seo;
+use App\Model\SideProject;
 use App\Model\SiteConfig;
 use Stenope\Bundle\ContentManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -19,6 +21,8 @@ final class HomeController extends AbstractController
         return $this->render('home/index.html.twig', [
 					'siteConfig' => $contentManager->getContent(SiteConfig::class, 'site'),
 					'seoConfig' => $contentManager->getContent(Seo::class, 'seo'),
+	        'sideProject' => $contentManager->getContent(SideProject::class, 'side'),
+	        'experience' => $contentManager->getContent(Experience::class, 'experience'),
         ]);
     }
 }

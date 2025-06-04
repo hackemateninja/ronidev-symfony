@@ -1,4 +1,5 @@
 
+import posthog from 'posthog-js'
 /*
  * Welcome to your app's main JavaScript file!
  *
@@ -36,3 +37,13 @@ if (lightSwitches.length > 0) {
         });
     });
 }
+
+
+
+
+posthog.init('phc_NVQvyXIERBgU6fZI6d497s7qE6nRu0OOssD8jdma7S0',
+	{
+		api_host: 'https://us.i.posthog.com',
+		person_profiles: 'always' // or 'always' to create profiles for anonymous users as well
+	}
+)

@@ -1,0 +1,92 @@
+experiences:
+  - startDate: "Oct 2022"
+    endDate: "Present"
+    url: "https://bushidolabs.dev"
+    imageURL: "./images/bushidolabs.jpg"
+    place: "Guatemala · Remote"
+    title: "Symfony Developer at Bushidolabs"
+    description: |
+      <p>Senior full-stack developer specializing in high-performance digital solutions for wellness, fitness, and mental health industries. Enterprise-grade Symfony applications with focus on scalability and UX.</p>
+      <ul>
+        <li><strong>Symfony Expert</strong>: Doctrine ORM, EasyAdmin</li>
+        <li><strong>CMS/E-Commerce</strong>: Sulu CMS, Shopware, Sylius</li>
+        <li><strong>Mobile Development</strong>: React Native, Lynx</li>
+        <li><strong>Modern Frontend</strong>: Stimulus, Turbo, Vue.js</li>
+      </ul>
+
+  - startDate: "Apr 2022"
+    endDate: "Oct 2022"
+    url: "https://agrotoken.com/es/"
+    imageURL: "./images/agrotoken.jpg"
+    place: "Montevideo, Uruguay · Hybrid"
+    title: "UI-React Developer at Agrotoken"
+    description: |
+      <p>Established optimized React development environment for large team while building Gatsby marketing pages for agricultural crypto-token startup.</p>
+      <ul>
+        <li>Standardized coding practices</li>
+        <li>CI/CD pipeline implementation</li>
+        <li>Blockchain integration (Solidity)</li>
+        <li>Cross-functional collaboration</li>
+      </ul>
+
+  - startDate: "Mar 2021"
+    endDate: "Apr 2022"
+    url: "https://www.autoweb.com/"
+    imageURL: "./images/autoweb.jpg"
+    place: "Guatemala · Remote"
+    title: "UX-UI React Developer at Autoweb"
+    description: |
+      <p>Developed Next.js car sales platform with styled-components. Implemented Azure Pipelines CI/CD and Docker containerization.</p>
+      <ul>
+        <li>SSR/dynamic routing</li>
+        <li>Design system implementation</li>
+        <li>Automated testing suites</li>
+      </ul>
+
+  - startDate: "Mar 2021"
+    endDate: "Oct 2021"
+    url: "https://www.thepuzzle.digital/"
+    imageURL: "./images/puzzle.jpg"
+    place: "Argentina · Remote"
+    title: "React Native Advisor"
+    description: |
+      <p>Provided React Native mentorship with focus on GraphQL integration and device features (camera/sensors). Conducted workshops and trained junior developers.</p>
+
+  - startDate: "May 2020"
+    endDate: "Oct 2020"
+    url: "https://habithackers.io/"
+    imageURL: "./images/habits.jpg"
+    place: "Mexico · Remote"
+    title: "React Native Developer"
+    description: |
+      <p>Built React Native app with AI service integration (NLP/image recognition). Delivered MVP within tight deadlines through cross-functional collaboration.</p>
+
+  - startDate: "Nov 2018"
+    endDate: "Dec 2019"
+    url: "#"
+    imageURL: "./images/noimage.jpg"
+    place: "Arizona, USA · Remote"
+    title: "Frontend Web Developer"
+    description: |
+      <p>Developed cryptocurrency trading platform UI using Angular/Ruby on Rails. Implemented responsive designs and interactive features.</p>
+
+  - startDate: "Feb 2017"
+    endDate: "Jun 2018"
+    url: "#"
+    imageURL: "./images/noimage.jpg"
+    place: "Mexico · Remote"
+    title: "Laravel Developer"
+    description: |
+      <p>Built social media applications helping influencers grow engagement. Laravel/PHP development with custom CMS features.</p>
+
+  - startDate: "Jan 2011"
+    endDate: "Jan 2016"
+    url: "https://nitroplantillas.jimdofree.com/"
+    imageURL: "./images/noimage.jpg"
+    place: "Guatemala · Remote"
+    title: "PHP Developer"
+    description: |
+      <p>Freelance developer creating custom WordPress/Jimdo templates. Focus on responsive design and client-specific solutions.</p>
+
+
+
